@@ -94,5 +94,8 @@ function imgs(images) {
 const markup = imgs(images);
 ulElement.innerHTML = markup;
 
-let gallery = new SimpleLightbox('.gallery a');
+let gallery = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 
